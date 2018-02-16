@@ -1,0 +1,29 @@
+<svg width="56" height="56" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2545 -947)">
+<g id="Group">
+<g id="topDestinationsCategoryIcon" filter="url(#filter0_d)">
+<use xlink:href="#path0_fill" transform="translate(2549 949)" fill="#FFFFFF"/>
+</g>
+<g id="svg">
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="translate(2562 963)" fill="#A0B0B9"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="2545" y="947" width="56" height="56" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.290196 0 0 0 0 0.290196 0 0 0 0 0.290196 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 24C 0 10.7452 10.7452 0 24 0L 24 0C 37.2548 0 48 10.7452 48 24L 48 24C 48 37.2548 37.2548 48 24 48L 24 48C 10.7452 48 0 37.2548 0 24L 0 24Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 22 1.22223L 22 2.44446L 12.2222 13.4445L 12.2222 19.5555L 17.1111 19.5555C 17.7908 19.5555 18.3333 20.1031 18.3333 20.7778C 18.3333 21.4573 17.7834 22 17.1086 22L 4.89136 22C 4.22412 22 3.66675 21.4525 3.66675 20.7778C 3.66675 20.0982 4.21411 19.5555 4.88892 19.5555L 9.77783 19.5555L 9.77783 13.4445L 0 2.44446L 0 1.22223C 0 0.542664 0.543945 0 1.21362 0L 20.7864 0C 21.4561 0 22 0.547546 22 1.22223ZM 5.05762 3.97833C 5.51831 4.4856 6.42529 4.88892 7.09497 4.88892L 14.8916 4.88892C 15.5542 4.88892 16.4768 4.48187 16.9353 3.97833L 18.3335 2.44446L 3.66675 2.44446L 5.05762 3.97833Z"/>
+</defs>
+</svg>
