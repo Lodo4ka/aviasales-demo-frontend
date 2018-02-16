@@ -17,14 +17,33 @@ const Footer = styled.footer`
 
 const Row = styled.div`
   display: flex;
-  margin-top: 31px;
-  flex-wrap: wrap;
+  margin-top: 17px;
+  @media (max-width: 576px) {
+    margin-top: 31px;
+    flex-wrap: wrap;
+  }
 `;
 
-const AppFlex = Row.extend`
-  flex-direction: column;
-  margin-top: 16px;
-  align-items: center;
+const App = Row.extend`
+  display: flex;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    margin-top: 16px;
+    align-items: center;
+  }
+`;
+
+const AppTop = styled.div`
+  display: inline-block;
+  margin-top: 32px;
+  @media (max-width: 576px) {
+    display: flex;
+    margin-top: 31px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 16px;
+    align-items: center;
+  }
 `;
 
 const Column = styled.div`
@@ -79,9 +98,24 @@ const Link = styled.a`
   }
 `;
 
+const LinkBottom = styled.a`
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 12px;
+  color: #4a4a4a;
+  display: block;
+  transition: 0.3s;
+  margin-right: 10px;
+  &:hover {
+    cursor: pointer;
+    color: #fd8a27;
+    text-decoration: none;
+  }
+`;
+
 const Line = styled.div`
   height: 1px;
-  border: 1px solid #e0e6e8;
+  border-bottom: 1px solid #e0e6e8;
   margin: 24px 0;
 `;
 
@@ -90,9 +124,12 @@ const Img = styled.img`
 `;
 
 const AppImg = styled.a`
-  margin-bottom: 8px;
-  &:hover {
-    cursor: pointer;
+  margin-right: 10px;
+  @media (max-width: 576px) {
+    margin-bottom: 8px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 `;
 
@@ -178,56 +215,63 @@ export default function() {
           <div className="col-xs-12">
             <Line />
           </div>
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="row">
+                <div className="col-xs-12 ">
+                  <Row>
+                    <LinkBottom>О компании</LinkBottom>
+                    <LinkBottom>Партнёрская программа</LinkBottom>
+                    <LinkBottom>Реклама</LinkBottom>s
+                    <LinkBottom>Помощь</LinkBottom>
+                    <LinkBottom>Правила</LinkBottom>
+                    <LinkBottom>White Label авиабилеты</LinkBottom>
+                  </Row>
+                </div>
 
-          <div className="col-xs-12 col-md-6 col-lg-4">
-            <Row>
-              <Link>О компании</Link>
-              <Link>Партнёрская программа</Link>
-              <Link>Реклама</Link>
-              <Link>Вакансии</Link>
-              <Link>Помощь</Link>
-              <Link>Правила</Link>
-              <Link>White Label авиабилеты</Link>
-            </Row>
-          </div>
+                <div className="col-xs-12">
+                  <Row>
+                    <LinkBottom>
+                      <Img src={vk} alt="" title="" /> Вконтакте
+                    </LinkBottom>
+                    <LinkBottom>
+                      <Img src={fb} alt="" title="" /> Фейсбук
+                    </LinkBottom>
+                    <LinkBottom>
+                      <Img src={instagram} alt="" title="" /> Инстаграм
+                    </LinkBottom>
+                    <LinkBottom>
+                      <Img src={twitter} alt="" title="" /> Твиттер
+                    </LinkBottom>
+                    <LinkBottom>
+                      <Img src={viber} alt="" title="" /> Вайбер
+                    </LinkBottom>
+                  </Row>
+                </div>
+              </div>
+              <div className="row start-md">
+                <div className="col-xs-12 col-md-12">
+                  <AppTop>Поиск и бронирование отелей</AppTop>
+                  <App>
+                    <AppImg>
+                      <Img footer src={appstorebtn} alt="" title="" />
+                    </AppImg>
+                    <AppImg>
+                      <Img footer src={googleplaybtn} alt="" title="" />
+                    </AppImg>
+                    <AppImg>
+                      <Img footer src={windowsstorebtn} alt="" title="" />
+                    </AppImg>
+                  </App>
+                </div>
 
-          <div className="col-xs-12">
-            <Row>
-              <Link>
-                <Img src={vk} alt="" title="" /> Вконтакте
-              </Link>
-              <Link>
-                <Img src={fb} alt="" title="" /> Фейсбук
-              </Link>
-              <Link>
-                <Img src={instagram} alt="" title="" /> Инстаграм
-              </Link>
-              <Link>
-                <Img src={twitter} alt="" title="" /> Твиттер
-              </Link>
-              <Link>
-                <Img src={viber} alt="" title="" /> Вайбер
-              </Link>
-            </Row>
-          </div>
-
-          <div className="col-xs-12">
-            <AppText>Поиск и бронирование отелей</AppText>
-            <AppFlex>
-              <AppImg>
-                <Img footer src={appstorebtn} alt="" title="" />
-              </AppImg>
-              <AppImg>
-                <Img footer src={googleplaybtn} alt="" title="" />
-              </AppImg>
-              <AppImg>
-                <Img footer src={windowsstorebtn} alt="" title="" />
-              </AppImg>
-            </AppFlex>
-          </div>
-
-          <div className="col-xs-12">
-            <Copyright>© 2007–2018, Aviasales — дешевые авиабилеты</Copyright>
+                <div className="col-xs-12">
+                  <Copyright>
+                    © 2007–2018, Aviasales — дешевые авиабилеты
+                  </Copyright>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

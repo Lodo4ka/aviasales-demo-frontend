@@ -20,10 +20,10 @@ const Header = styled.header`
     #196ebd 122.26%
   );
 
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     padding-bottom: 122px;
   }
-  @media (min-width: 992px) {
+  @media (max-width: 992px) {
     padding-bottom: 254px;
   }
 `;
